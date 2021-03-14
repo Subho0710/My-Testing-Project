@@ -1,27 +1,119 @@
-#header {
+body {
+  background-color: rgb(48, 1, 1);
+}
+#navbar {
+  list-style-type: none;
   background-color: black;
+  overflow: hidden;
   margin: 20px 30px 20px 30px;
-  border: 2px solid black;
+  text-align: center;
+}
+#navbar li {
+  float: left;
+}
+#navbar a {
+  display: block;
+  color: white;
+  text-align: center;
   font-size: 20px;
   font-family: Arial, sans-serif;
-  width: 95%; }
-  #header a {
-    color: white;
-    text-decoration: none; }
-  #header td {
-    text-align: center;
-    padding: 10px;
-    background-color: black;
-    width: 20%; }
-  #header td:hover {
-    background-color: grey; }
-  #header a:hover {
-    background-color: transparent;
-    text-decoration: underline; }
+  padding: 20px;
+  background-color: black;
+  text-decoration: none;
+}
+#navbar a:hover {
+  background-color: grey;
+  text-decoration: none;
+}
+#home {
+  background-image: url("https://image.freepik.com/free-vector/cloud-computing-concept-abstract-cloud-connection-technology-background_43778-489.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 10px;
+}
+#home h1 {
+  padding: 20px;
+  text-align: center;
+  color: #b8e419;
+}
+img {
+  background-color: none;
+  float: right;
+}
+#home p {
+  padding: 20px;
+  font-size: 20px;
+  color: silver;
+}
+#list1 {
+  color: #19e485;
+  font-size: 20px;
+}
 
-@media (max-width: 800px) {
-  #header {
+#data, #intro, #types {
+  font-size: 20px;
+  font-family: Comic Sans MS,sans-serif; 
+}
+#game {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f96b24df-1528-436c-85a5-2d88dfd5ee31/d4ml1pu-f0263e80-e77c-4b1f-b860-efcbb7b3a225.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZjk2YjI0ZGYtMTUyOC00MzZjLTg1YTUtMmQ4OGRmZDVlZTMxXC9kNG1sMXB1LWYwMjYzZTgwLWU3N2MtNGIxZi1iODYwLWVmY2JiN2IzYTIyNS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.LhniuW-hVZvnuE1tBg1yDxwMq6i9KdfDP15hVtfGDM0");
+  padding: 10px; 
+}
+#game p {
+  color: rgb(56, 15, 150);
+  padding: 10px;
+  font-size: 20px;
+}
+#game h1 {
+  text-align: center;
+  color: red; 
+}
+#game h2 {
+  font-size: 25px;
+  font-family: cursive;
+  margin: 10px;
+  color: darkviolet; 
+}
+#data {
+  border: 2px solid brown;
+  border-collapse: collapse;
+}
+#data caption {
+  color: green;
+  padding: 10px;
+}
+#data th, #data td {
+  padding: 10px;
+  text-align: center;    
+  border: 2px solid black;
+  color: darkgreen; }
+#data th {
+  background-color: rgba(255, 215, 0, 0.7); }
+#data tr:nth-child(even) {
+  background-color: rgba(173, 216, 230, 0.7); }
+#data tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+#intro {
+  color: grey;
+}
+
+#types {
+  color: green; 
+}
+
+@media (min-width: 900px) {
+  #data {
+    width: 70%;
+    margin: 20px;
+    padding: 20px; } }
+@media (max-width: 899px) {
+  #navbar {
     margin: 15px 15px 15px 20px;
-    font-size: 15px; } }
+    font-size: 15px; }
+  #data {
+    width: 90%;
+    margin: 10px;
+    padding: 10px; }
+}
 
-/*# sourceMappingURL=style.css.map */

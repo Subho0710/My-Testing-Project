@@ -33,15 +33,21 @@ h2 {
 #data {
   border: 2px solid brown;
   border-collapse: collapse;}
+  #data caption {
+    color: green;
+    padding: 10px;
+  }
   #data th, #data td {
     padding: 10px;
     text-align: center;
     border: 2px solid black;
     color: darkgreen; }
   #data th {
-    background-color: gold; }
-  #data td {
-    background-color: lightblue; }
+    background-color: rgba(255, 215, 0, 0.7); }
+  #data tr:nth-child(even) {
+    background-color: rgba(173, 216, 230, 0.7); }
+  #data tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.5); }
 
 #intro {
   color: grey; }
