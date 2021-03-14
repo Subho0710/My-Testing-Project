@@ -3,10 +3,13 @@ body {
 }
 #navbar {
   list-style-type: none;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
-  margin: 20px 30px 20px 30px;
+  padding: 0;
   text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 #navbar li {
   float: left;
@@ -18,8 +21,11 @@ body {
   font-size: 20px;
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
+}
+#navbar a:active {
+  background-color: aqua;
 }
 #navbar a:hover {
   background-color: grey;
@@ -33,7 +39,7 @@ body {
   padding: 10px;
 }
 #home h1 {
-  padding: 20px;
+  padding: 70px 20px 20px;
   text-align: center;
   color: #b8e419;
 }
@@ -65,6 +71,7 @@ img {
   font-size: 20px;
 }
 #game h1 {
+  padding: 70px 20px 20px;
   text-align: center;
   color: red; 
 }
@@ -109,8 +116,12 @@ img {
     padding: 20px; } }
 @media (max-width: 899px) {
   #navbar {
-    margin: 15px 15px 15px 20px;
-    font-size: 15px; }
+    font-size: 15px; 
+    position: static;
+  }
+  #navbar li {
+    float: none;
+  }
   #data {
     width: 90%;
     margin: 10px;
